@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-
 import Header from './component/Header';
 import Home from './component/Home';
 import Products from './component/Products';
@@ -8,14 +7,8 @@ import Product from './component/Product';
 import LoginModal from './component/LoginModal';
 import RegisterModal from './component/RegisterModal';
 import { Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { openLoginModal } from '..';
 
-const SomeComponent = () => {
-  const dispatch = useDispatch();
 
-  return <Button onClick={() => dispatch(openLoginModal())}>Open Login</Button>;
-};
 
 
 function App() {
